@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* BRAND COLOR PALETTE (From Brand Sheet) */
+        /* BRAND COLOR PALETTE */
         :root {
             --forest-green: #0B5D3B;
             --primary-green: #2E7D4B;
@@ -66,13 +66,13 @@
             padding: 15px 20px;
         }
 
-        /* Logo Crop Setup using background positioning from image */
+        /* HEADER LOGO */
         .logo-container {
-            width: 320px;
-            height: 60px;
+            width: 340px;
+            height: 65px;
             background-image: url('Sycamore Executive Counsel.png');
-            background-size: 1100px auto; /* Adjusts scale to match crop */
-            background-position: -20px -25px; /* Crops top-left horizontal logo */
+            background-size: 320% auto;
+            background-position: 0.5% 1.8%;
             background-repeat: no-repeat;
         }
 
@@ -158,7 +158,7 @@
             justify-content: center;
         }
 
-        /* FEATURES / VALUE PROP */
+        /* SERVICES SECTION */
         .features {
             padding: 80px 20px;
             max-width: 1200px;
@@ -222,20 +222,20 @@
             max-width: 1100px;
             margin: 0 auto;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 50px;
             flex-wrap: wrap;
         }
 
         .about-text {
-            flex: 1;
+            flex: 1.4;
             min-width: 300px;
         }
 
         .about-text h2 {
-            font-size: 2rem;
+            font-size: 2.2rem;
             color: var(--forest-green);
-            margin-bottom: 15px;
+            margin-bottom: 5px;
         }
 
         .about-text h4 {
@@ -246,31 +246,106 @@
 
         .about-text p {
             margin-bottom: 15px;
-            color: #444;
+            color: #333;
+        }
+
+        .about-highlights {
+            margin-top: 25px;
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            border-left: 4px solid var(--forest-green);
+        }
+
+        .about-highlights h5 {
+            font-size: 1.05rem;
+            color: var(--forest-green);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .about-highlights ul {
+            list-style-type: none;
+        }
+
+        .about-highlights li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            color: var(--dark-slate);
+        }
+
+        .about-highlights li::before {
+            content: "•";
+            color: var(--leaf-green);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .about-card-column {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
         .about-image {
-            flex: 1;
-            min-width: 300px;
             background: var(--forest-green);
-            height: 400px;
+            height: 250px;
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--white);
-            position: relative;
             box-shadow: 0 10px 30px rgba(11, 93, 59, 0.2);
         }
 
-        /* Dark Stacked Logo Display in About Section */
         .about-logo-badge {
-            width: 250px;
-            height: 250px;
+            width: 280px;
+            height: 200px;
             background-image: url('Sycamore Executive Counsel.png');
-            background-size: 800px auto;
-            background-position: -308px -605px; /* Crops dark stacked logo */
+            background-size: 240% auto;
+            background-position: 39% 98.5%;
             background-repeat: no-repeat;
+        }
+
+        .education-box {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            border-top: 3px solid var(--primary-green);
+        }
+
+        .education-box h5 {
+            font-size: 1.05rem;
+            color: var(--forest-green);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .edu-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .edu-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .edu-item i {
+            color: var(--primary-green);
+            font-size: 1.2rem;
         }
 
         /* CONTACT SECTION */
@@ -373,7 +448,6 @@
     <!-- NAVIGATION HEADER -->
     <header>
         <div class="nav-container">
-            <!-- Brand Logo dynamically cropped from your sheet -->
             <a href="#" aria-label="Sycamore Executive Counsel Home">
                 <div class="logo-container"></div>
             </a>
@@ -392,7 +466,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Strategic Legal Counsel for Executive Leadership</h1>
-            <p>Empowering businesses, executives, and organizations in Fort Wayne and beyond with top-tier corporate legal advisory.</p>
+            <p>Empowering businesses, executives, and organizations in Fort Wayne and beyond with proven C-suite corporate advisory.</p>
             <div class="hero-btns">
                 <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
                 <a href="#services" class="btn btn-outline">Our Practice Areas</a>
@@ -410,17 +484,17 @@
             <div class="card">
                 <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
                 <h3>Corporate Governance</h3>
-                <p>Guiding boards of directors and C-suite executives through complex legal landscapes, fiduciary responsibilities, and operational compliance.</p>
+                <p>Guiding boards of directors and executive leadership through fiduciary responsibilities, board reporting, shareholder relations, and high-stakes corporate strategy.</p>
             </div>
             <div class="card">
                 <div class="card-icon"><i class="fa-solid fa-handshake"></i></div>
                 <h3>Strategic Transactions</h3>
-                <p>Expert legal counsel for mergers, acquisitions, joint ventures, and major commercial agreements structured to maximize value.</p>
+                <p>Expert legal direction for commercial contracts, corporate restructuring, joint ventures, and strategic growth initiatives designed to maximize enterprise value.</p>
             </div>
             <div class="card">
                 <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                <h3>Risk Mitigation</h3>
-                <p>Proactive legal strategies designed to protect assets, prevent litigation, and safeguard enterprise longevity in evolving markets.</p>
+                <h3>Risk & Compliance Management</h3>
+                <p>Proactive counsel to safeguard corporate assets, manage regulatory compliance, resolve complex legal challenges, and mitigate organizational risk.</p>
             </div>
         </div>
     </section>
@@ -429,14 +503,43 @@
     <section class="about" id="about">
         <div class="about-container">
             <div class="about-text">
-                <h2>Led by Mark Dely</h2>
-                <h4>Owner & Lead Executive Counsel</h4>
-                <p>Sycamore Executive Counsel was founded on the principle that modern businesses require more than standard legal advice—they need trusted strategic partners who understand business realities.</p>
-                <p>Based in Fort Wayne, Indiana, Mark Dely brings extensive executive experience in corporate strategy, commercial transactions, and risk management to offer proactive, growth-focused legal solutions.</p>
+                <h2>Mark Dely</h2>
+                <h4>Founder & Lead Executive Counsel</h4>
+                <p>Sycamore Executive Counsel delivers top-tier, enterprise-level legal wisdom to corporate leaders and expanding businesses. Founded by veteran general counsel Mark Dely, the practice brings extensive executive experience directly to your organization.</p>
+                <p>Based in Fort Wayne, Indiana, Mark combines sharp commercial acumen with high-level corporate legal execution to act as a trusted advisor to executives, boards, and key business decision-makers.</p>
+                
+                <div class="about-highlights">
+                    <h5>Executive Leadership Career</h5>
+                    <ul>
+                        <li><strong>Vera Bradley</strong> (2016–2026): Vice President, Chief Legal Officer & Corporate Secretary</li>
+                        <li><strong>Fred’s</strong>: Senior Vice President, Chief Legal Officer, General Counsel & Secretary</li>
+                        <li><strong>The ServiceMaster Company</strong>: Vice President & Divisional General Counsel of the Franchise Services Group</li>
+                    </ul>
+                </div>
             </div>
-            <div class="about-image">
-                <!-- Displays the Dark Dark Version of the logo -->
-                <div class="about-logo-badge"></div>
+
+            <div class="about-card-column">
+                <div class="about-image">
+                    <div class="about-logo-badge"></div>
+                </div>
+
+                <div class="education-box">
+                    <h5>Education & Credentials</h5>
+                    <div class="edu-item">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div>
+                            <strong>New York University School of Law</strong>
+                            <p style="font-size:0.85rem; color:#666;">Juris Doctor (J.D.)</p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <i class="fa-solid fa-university"></i>
+                        <div>
+                            <strong>Michigan State University</strong>
+                            <p style="font-size:0.85rem; color:#666;">Undergraduate Studies</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
