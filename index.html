@@ -199,7 +199,7 @@
         /* HERO SECTION */
         .hero {
             background: linear-gradient(135deg, rgba(26, 37, 33, 0.92) 0%, rgba(11, 93, 59, 0.95) 100%), 
-                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+                        url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUKDxZ8JWs3pg0qqB999FM792Wxsldu1dRiKJtTZfvU99CodpMXstHX4A&s=10') center/cover no-repeat;
             color: var(--white);
             padding: 160px 20px;
             text-align: center;
@@ -340,15 +340,17 @@
         .about-container {
             max-width: 1200px;
             margin: 0 auto;
-            display: flex;
-            align-items: stretch;
-            gap: 70px;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            grid-template-areas: 
+                "text image"
+                "text education";
+            gap: 35px 70px;
+            align-items: start;
         }
 
         .about-text {
-            flex: 1.5;
-            min-width: 320px;
+            grid-area: text;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -420,18 +422,13 @@
             top: 3px;
         }
 
-        .about-card-column {
-            flex: 1;
-            min-width: 320px;
-            display: flex;
-            flex-direction: column;
-            gap: 35px;
-        }
-
         /* Mark Dely Headshot Container */
         .about-image-container {
+            grid-area: image;
             width: 100%;
-            height: 450px;
+            max-width: 360px;
+            height: 380px;
+            margin: 0 auto;
             border-radius: 12px;
             box-shadow: 0 15px 40px rgba(11, 93, 59, 0.15);
             position: relative;
@@ -451,11 +448,13 @@
         }
 
         .education-box {
+            grid-area: education;
             background: var(--white);
             padding: 35px;
             border-radius: 12px;
             box-shadow: 0 15px 40px rgba(0,0,0,0.05);
             border-top: 4px solid var(--primary-green);
+            width: 100%;
         }
 
         .education-box h5 {
@@ -632,7 +631,21 @@
                 visibility: visible;
             }
 
-            .about-container { gap: 50px; }
+            /* Stack image first on mobile using CSS Grid Areas */
+            .about-container { 
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    "image"
+                    "text"
+                    "education";
+                gap: 40px; 
+            }
+            
+            .about-image-container {
+                height: 320px;
+                max-width: 300px;
+            }
+
             .contact-card-centered { padding: 40px 20px; }
         }
     </style>
@@ -673,7 +686,7 @@
 
     <section class="features" id="services">
         <div class="section-title fade-up">
-            <h2>Core Practice Areas</h2>
+            <h2>Areas of Expertise</h2>
             <p>High-level legal advisory services designed for corporate executives, boards of directors, and growing organizations.</p>
         </div>
         <div class="grid-3">
@@ -713,26 +726,24 @@
                 </div>
             </div>
 
-            <div class="about-card-column fade-up delay-200">
-                <div class="about-image-container">
-                    <img src="mark_dely.jpg" alt="Mark Dely, Founder & Lead Executive Counsel" />
-                </div>
+            <div class="about-image-container fade-up delay-200">
+                <img src="mark_dely.jpg" alt="Mark Dely, Founder & Lead Executive Counsel" />
+            </div>
 
-                <div class="education-box">
-                    <h5>Education & Credentials</h5>
-                    <div class="edu-item">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <div>
-                            <strong>New York University School of Law</strong>
-                            <p style="font-size:0.9rem; color:var(--text-gray);">Juris Doctor (J.D.)</p>
-                        </div>
+            <div class="education-box fade-up delay-300">
+                <h5>Education & Credentials</h5>
+                <div class="edu-item">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div>
+                        <strong>New York University School of Law</strong>
+                        <p style="font-size:0.9rem; color:var(--text-gray);">Juris Doctor (J.D.)</p>
                     </div>
-                    <div class="edu-item">
-                        <i class="fa-solid fa-university"></i>
-                        <div>
-                            <strong>Michigan State University</strong>
-                            <p style="font-size:0.9rem; color:var(--text-gray);">Undergraduate Studies</p>
-                        </div>
+                </div>
+                <div class="edu-item">
+                    <i class="fa-solid fa-university"></i>
+                    <div>
+                        <strong>Michigan State University</strong>
+                        <p style="font-size:0.9rem; color:var(--text-gray);">Undergraduate Studies</p>
                     </div>
                 </div>
             </div>
