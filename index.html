@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sycamore Executive Counsel | Strategic Business & Legal Advisors</title>
 
-    <!-- Favicons (Referencing the main folder) -->
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -85,36 +85,14 @@
         .brand-logo {
             display: flex;
             align-items: center;
-            gap: 12px;
-            color: var(--forest-green);
         }
 
-        .brand-logo i {
-            font-size: 2.2rem;
-            color: var(--leaf-green);
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-        }
-
-        .brand-logo-text {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.1;
-        }
-
-        .brand-logo-title {
-            font-family: 'Cinzel', serif;
-            font-weight: 700;
-            font-size: 1.4rem;
-            color: var(--forest-green);
-        }
-
-        .brand-logo-subtitle {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 0.65rem;
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--primary-green);
+        /* Top Left Header Logo Styling */
+        .nav-main-logo {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+            display: block;
         }
 
         nav ul {
@@ -410,28 +388,29 @@
             gap: 30px;
         }
 
-        /* Updated Image Container for Logo */
+        /* Middle Section Main Logo Container */
         .about-image-container {
             width: 100%;
             height: 300px;
             border-radius: 12px;
-            background-color: var(--white); /* Changed to white for logo clarity */
-            box-shadow: 0 15px 40px rgba(11, 93, 59, 0.3);
+            background-color: var(--white);
+            box-shadow: 0 15px 40px rgba(11, 93, 59, 0.15);
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 20px;
         }
 
         .about-image-container img {
-            width: 70%;
-            height: 70%;
-            object-fit: contain; /* ensures the logo fits perfectly without being cropped */
+            max-width: 85%;
+            max-height: 85%;
+            object-fit: contain;
             transition: transform 0.5s ease;
         }
 
         .about-image-container:hover img {
-            transform: scale(1.05);
+            transform: scale(1.04);
         }
 
         .education-box {
@@ -666,12 +645,9 @@
 
     <header>
         <div class="nav-container">
+            <!-- Top-Left Main Logo -->
             <a href="#" aria-label="Sycamore Executive Counsel Home" class="brand-logo">
-                <i class="fa-solid fa-leaf"></i>
-                <div class="brand-logo-text">
-                    <span class="brand-logo-title">Sycamore</span>
-                    <span class="brand-logo-subtitle">Executive Counsel</span>
-                </div>
+                <img src="sycamore_main_logo.png" alt="Sycamore Executive Counsel Logo" class="nav-main-logo">
             </a>
             
             <button class="mobile-menu-btn" aria-label="Toggle navigation menu" id="mobileMenuBtn">
@@ -743,9 +719,9 @@
             </div>
 
             <div class="about-card-column fade-up delay-200">
+                <!-- Middle Main Logo Section -->
                 <div class="about-image-container">
-                    <!-- Fixed image source to use your uploaded favicon -->
-                    <img src="apple-touch-icon.png" alt="Sycamore Executive Counsel Logo" />
+                    <img src="sycamore_main_logo.png" alt="Sycamore Executive Counsel Main Logo" />
                 </div>
 
                 <div class="education-box">
