@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sycamore Executive Counsel | Strategic Business & Legal Advisors</title>
-    
+
+    <!-- Favicons (Referencing the main folder) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -404,27 +410,28 @@
             gap: 30px;
         }
 
-        /* Styled Image Container for the logo graphic */
+        /* Updated Image Container for Logo */
         .about-image-container {
             width: 100%;
             height: 300px;
             border-radius: 12px;
-            overflow: hidden;
-            background-color: #000;
+            background-color: var(--white); /* Changed to white for logo clarity */
             box-shadow: 0 15px 40px rgba(11, 93, 59, 0.3);
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .about-image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center 25%; /* Positions the graphic to highlight the logos nicely */
+            width: 70%;
+            height: 70%;
+            object-fit: contain; /* ensures the logo fits perfectly without being cropped */
             transition: transform 0.5s ease;
         }
 
         .about-image-container:hover img {
-            transform: scale(1.03);
+            transform: scale(1.05);
         }
 
         .education-box {
@@ -736,10 +743,9 @@
             </div>
 
             <div class="about-card-column fade-up delay-200">
-                
-                <!-- Requested logo graphic image -->
                 <div class="about-image-container">
-                    <img src="image_e4a226.jpg" alt="Sycamore Executive Counsel Logos" />
+                    <!-- Fixed image source to use your uploaded favicon -->
+                    <img src="apple-touch-icon.png" alt="Sycamore Executive Counsel Logo" />
                 </div>
 
                 <div class="education-box">
