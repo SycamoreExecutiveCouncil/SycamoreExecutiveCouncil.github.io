@@ -3,7 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
     <title>Sycamore Executive Counsel | Strategic Business & Legal Advisors</title>
+    <meta name="title" content="Sycamore Executive Counsel | Strategic Business & Legal Advisors">
+    <meta name="description" content="Sycamore Executive Counsel provides expert corporate governance, strategic transaction advisory, and risk management for business leaders in Fort Wayne, Indiana.">
+    <meta name="keywords" content="Executive Counsel, Strategic Legal Advisor, Corporate Governance, Fort Wayne Business Lawyer, Risk Compliance, Mark Dely">
+    <meta name="author" content="Sycamore Executive Counsel">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sycamoreexecutivecouncil.github.io/">
+    <meta property="og:title" content="Sycamore Executive Counsel | Strategic Business & Legal Advisors">
+    <meta property="og:description" content="Empowering Fort Wayne businesses with clear, strategic, and practical legal guidance.">
+    <meta property="og:image" content="sycamore_main_logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sycamoreexecutivecouncil.github.io/">
+    <meta property="twitter:title" content="Sycamore Executive Counsel | Strategic Business Advisors">
+    <meta property="twitter:description" content="Empowering Fort Wayne businesses with clear, strategic, and practical legal guidance.">
+    <meta property="twitter:image" content="sycamore_main_logo.png">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -59,14 +79,15 @@
         a {
             text-decoration: none;
             color: inherit;
+            transition: color 0.3s ease;
         }
 
         /* HEADER / NAVIGATION */
         header {
-            background-color: rgba(255, 255, 255, 0.95);
+            background-color: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.06);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -87,9 +108,8 @@
             align-items: center;
         }
 
-        /* Top Left Header Logo Styling */
         .nav-main-logo {
-            height: 48px;
+            height: 52px;
             width: auto;
             object-fit: contain;
             display: block;
@@ -98,7 +118,7 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 35px;
             align-items: center;
             transition: all 0.3s ease;
         }
@@ -107,7 +127,6 @@
             font-weight: 600;
             font-size: 0.95rem;
             color: var(--dark-slate);
-            transition: color 0.3s;
             position: relative;
         }
 
@@ -141,117 +160,124 @@
         }
 
         .btn {
-            padding: 12px 28px;
+            padding: 12px 32px;
             border-radius: 6px;
             font-weight: 600;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: inline-block;
             cursor: pointer;
             text-align: center;
+            letter-spacing: 0.5px;
         }
 
         .btn-primary {
             background-color: var(--forest-green);
             color: var(--white) !important;
             border: 2px solid var(--forest-green);
-            box-shadow: 0 4px 10px rgba(11, 93, 59, 0.2);
+            box-shadow: 0 4px 15px rgba(11, 93, 59, 0.2);
         }
 
         .btn-primary:hover {
             background-color: var(--primary-green);
             border-color: var(--primary-green);
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(11, 93, 59, 0.3);
+            box-shadow: 0 8px 20px rgba(11, 93, 59, 0.25);
         }
 
         .btn-outline {
             background-color: transparent;
-            color: var(--white);
+            color: var(--white) !important;
             border: 2px solid var(--white);
         }
 
         .btn-outline:hover {
             background-color: var(--white);
-            color: var(--forest-green);
+            color: var(--forest-green) !important;
             transform: translateY(-2px);
         }
 
+        /* HERO SECTION */
         .hero {
-            background: linear-gradient(135deg, rgba(26, 37, 33, 0.95) 0%, rgba(11, 93, 59, 0.95) 100%), 
+            background: linear-gradient(135deg, rgba(26, 37, 33, 0.92) 0%, rgba(11, 93, 59, 0.95) 100%), 
                         url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
             color: var(--white);
-            padding: 140px 20px;
+            padding: 160px 20px;
             text-align: center;
             position: relative;
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             position: relative;
             z-index: 2;
         }
 
         .hero h1 {
-            font-size: 3.2rem;
-            margin-bottom: 20px;
+            font-size: 3.5rem;
+            margin-bottom: 25px;
             line-height: 1.2;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            text-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             color: var(--sage-green);
-            margin-bottom: 40px;
-            font-weight: 300;
-            text-shadow: 0 1px 5px rgba(0,0,0,0.2);
+            margin-bottom: 45px;
+            font-weight: 400;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .hero-btns {
             display: flex;
-            gap: 15px;
+            gap: 20px;
             justify-content: center;
         }
 
+        /* FEATURES / SERVICES */
         .features {
-            padding: 100px 20px;
+            padding: 120px 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 70px;
         }
 
         .section-title h2 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             color: var(--forest-green);
             margin-bottom: 15px;
         }
 
         .section-title p {
             color: var(--text-gray);
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
         }
 
         .grid-3 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
+            gap: 35px;
         }
 
         .card {
             background: var(--white);
-            padding: 40px 30px;
+            padding: 50px 40px;
             border-radius: 12px;
-            border: 1px solid rgba(0,0,0,0.05);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.03);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.04);
             transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
+            text-align: center;
         }
 
         .card::before {
@@ -260,13 +286,13 @@
             top: 0; left: 0; width: 100%; height: 4px;
             background: var(--primary-green);
             transform: scaleX(0);
-            transform-origin: left;
+            transform-origin: center;
             transition: transform 0.4s ease;
         }
 
         .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(11, 93, 59, 0.1);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(11, 93, 59, 0.08);
         }
 
         .card:hover::before {
@@ -274,88 +300,97 @@
         }
 
         .card-icon {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             color: var(--primary-green);
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             background: var(--mist-green);
-            width: 80px;
-            height: 80px;
+            width: 85px;
+            height: 85px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
             transition: transform 0.4s ease;
         }
 
         .card:hover .card-icon {
-            transform: scale(1.1);
+            transform: scale(1.1) rotate(5deg);
         }
 
         .card h3 {
             margin-bottom: 15px;
             color: var(--forest-green);
-            font-size: 1.4rem;
+            font-size: 1.5rem;
         }
         
         .card p {
             color: var(--text-gray);
+            font-size: 1.05rem;
+            line-height: 1.6;
         }
 
+        /* ABOUT SECTION */
         .about {
             background-color: var(--mist-green);
-            padding: 100px 20px;
+            padding: 120px 20px;
         }
 
         .about-container {
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
-            align-items: flex-start;
-            gap: 60px;
+            align-items: stretch;
+            gap: 70px;
             flex-wrap: wrap;
         }
 
         .about-text {
             flex: 1.5;
-            min-width: 300px;
+            min-width: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .about-text h2 {
-            font-size: 2.8rem;
+            font-size: 3rem;
             color: var(--forest-green);
             margin-bottom: 5px;
         }
 
         .about-text h4 {
             color: var(--primary-green);
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             font-weight: 600;
-            font-size: 1.2rem;
-            letter-spacing: 1px;
+            font-size: 1.25rem;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
         }
 
         .about-text p {
-            margin-bottom: 18px;
+            margin-bottom: 20px;
             color: var(--text-gray);
-            font-size: 1.1rem;
+            font-size: 1.15rem;
+            line-height: 1.7;
         }
 
         .about-highlights {
-            margin-top: 35px;
+            margin-top: 40px;
             background: var(--white);
-            padding: 30px;
+            padding: 35px;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.05);
             border-left: 5px solid var(--forest-green);
         }
 
         .about-highlights h5 {
             font-size: 1.2rem;
             color: var(--forest-green);
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
         }
 
         .about-highlights ul {
@@ -364,10 +399,15 @@
 
         .about-highlights li {
             position: relative;
-            padding-left: 25px;
-            margin-bottom: 12px;
-            font-size: 1.05rem;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
             color: var(--dark-slate);
+            font-weight: 500;
+        }
+
+        .about-highlights li:last-child {
+            margin-bottom: 0;
         }
 
         .about-highlights li::before {
@@ -377,7 +417,7 @@
             color: var(--leaf-green);
             position: absolute;
             left: 0;
-            top: 2px;
+            top: 3px;
         }
 
         .about-card-column {
@@ -385,55 +425,54 @@
             min-width: 320px;
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 35px;
         }
 
-        /* Middle Section Main Logo Container */
         .about-image-container {
             width: 100%;
-            height: 300px;
+            height: 320px;
             border-radius: 12px;
             background-color: var(--white);
-            box-shadow: 0 15px 40px rgba(11, 93, 59, 0.15);
+            box-shadow: 0 15px 40px rgba(11, 93, 59, 0.1);
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 30px;
         }
 
         .about-image-container img {
-            max-width: 85%;
-            max-height: 85%;
+            max-width: 80%;
+            max-height: 80%;
             object-fit: contain;
-            transition: transform 0.5s ease;
+            transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
         }
 
         .about-image-container:hover img {
-            transform: scale(1.04);
+            transform: scale(1.05);
         }
 
         .education-box {
             background: var(--white);
-            padding: 30px;
+            padding: 35px;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.05);
             border-top: 4px solid var(--primary-green);
         }
 
         .education-box h5 {
             font-size: 1.1rem;
             color: var(--forest-green);
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
         }
 
         .edu-item {
             display: flex;
             align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 20px;
+            gap: 18px;
+            margin-bottom: 25px;
         }
 
         .edu-item:last-child {
@@ -442,115 +481,83 @@
 
         .edu-item i {
             color: var(--primary-green);
-            font-size: 1.4rem;
-            margin-top: 3px;
-        }
-
-        .contact {
-            padding: 100px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            background: var(--white);
-            border-radius: 16px;
-            box-shadow: 0 15px 50px rgba(0,0,0,0.05);
-            overflow: hidden;
-        }
-
-        .contact-info {
-            background: var(--mist-green);
-            padding: 50px;
-        }
-
-        .contact-info h3 {
-            font-size: 2.2rem;
-            color: var(--forest-green);
-            margin-bottom: 20px;
+            font-size: 1.5rem;
+            margin-top: 2px;
         }
         
-        .contact-info p.lead {
-            color: var(--text-gray);
-            margin-bottom: 35px;
-            font-size: 1.1rem;
+        .edu-item strong {
+            font-size: 1.05rem;
+            color: var(--dark-slate);
+        }
+
+        /* CONTACT SECTION */
+        .contact {
+            padding: 120px 20px;
+            background-color: var(--white);
+        }
+
+        .contact-card-centered {
+            max-width: 650px;
+            margin: 0 auto;
+            background: var(--mist-green);
+            padding: 60px 40px;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(11, 93, 59, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+            text-align: center;
         }
 
         .info-item {
             display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            margin-bottom: 30px;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
         }
 
         .info-item-icon {
             background: var(--white);
-            width: 50px;
-            height: 50px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--primary-green);
-            font-size: 1.2rem;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            font-size: 1.6rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease;
+        }
+        
+        .info-item:hover .info-item-icon {
+            transform: translateY(-5px);
         }
 
-        .contact-form {
-            padding: 50px;
-            position: relative;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group label {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--dark-slate);
+        .info-item-text strong {
+            color: var(--forest-green);
+            font-size: 1.3rem;
+            font-family: 'Cinzel', serif;
+            display: block;
             margin-bottom: 8px;
         }
 
-        .form-group input,
-        .form-group textarea {
-            padding: 14px 16px;
-            border: 1px solid #E2E8F0;
-            border-radius: 6px;
-            font-family: inherit;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            background-color: #F8FAFC;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary-green);
-            background-color: var(--white);
-            box-shadow: 0 0 0 3px rgba(46, 125, 75, 0.1);
-        }
-
-        .success-message {
-            display: none;
-            background: var(--mist-green);
-            color: var(--forest-green);
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid var(--leaf-green);
-            margin-bottom: 20px;
+        .info-item-text p, .info-item-text a {
+            color: var(--text-gray);
+            font-size: 1.15rem;
             font-weight: 500;
         }
+        
+        .info-item-text a:hover {
+            color: var(--primary-green);
+        }
 
+        /* FOOTER */
         footer {
             background-color: var(--dark-slate);
             color: var(--white);
-            padding: 60px 20px 30px;
+            padding: 70px 20px 40px;
             text-align: center;
         }
 
@@ -560,32 +567,33 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
+            gap: 25px;
             padding-bottom: 40px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
         }
 
         .footer-logo {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             font-family: 'Cinzel', serif;
             font-weight: 700;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             color: var(--white);
             letter-spacing: 1px;
         }
 
         .footer-logo i {
-            color: var(--sage-green);
+            color: var(--leaf-green);
         }
 
         .copyright {
             padding-top: 30px;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             color: var(--sage-green);
         }
 
+        /* ANIMATIONS */
         .fade-up {
             opacity: 0;
             transform: translateY(40px);
@@ -602,17 +610,10 @@
         .delay-200 { transition-delay: 200ms; }
         .delay-300 { transition-delay: 300ms; }
 
-        @media (max-width: 992px) {
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-            .contact-form, .contact-info {
-                padding: 40px 30px;
-            }
-        }
-
+        /* RESPONSIVE DESIGN */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.4rem; }
+            .hero { padding: 120px 20px; }
+            .hero h1 { font-size: 2.5rem; }
             .hero p { font-size: 1.1rem; }
             .hero-btns { flex-direction: column; }
             
@@ -625,9 +626,9 @@
                 width: 100%;
                 background-color: var(--white);
                 flex-direction: column;
-                padding: 20px;
-                gap: 20px;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                padding: 25px;
+                gap: 25px;
+                box-shadow: 0 15px 30px rgba(0,0,0,0.1);
                 clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
                 visibility: hidden;
             }
@@ -637,7 +638,8 @@
                 visibility: visible;
             }
 
-            .about-container { gap: 40px; }
+            .about-container { gap: 50px; }
+            .contact-card-centered { padding: 40px 20px; }
         }
     </style>
 </head>
@@ -645,7 +647,6 @@
 
     <header>
         <div class="nav-container">
-            <!-- Top-Left Main Logo -->
             <a href="#" aria-label="Sycamore Executive Counsel Home" class="brand-logo">
                 <img src="sycamore_main_logo.png" alt="Sycamore Executive Counsel Logo" class="nav-main-logo">
             </a>
@@ -656,10 +657,10 @@
 
             <nav>
                 <ul id="navMenu">
-                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#services">Practice Areas</a></li>
                     <li><a href="#about">About Mark Dely</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact" class="btn btn-primary">Consultation</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Schedule Consultation</a></li>
                 </ul>
             </nav>
         </div>
@@ -667,35 +668,35 @@
 
     <section class="hero">
         <div class="hero-content fade-up visible">
-            <h1>Smart Legal Advice for Business Leaders</h1>
-            <p>Helping businesses and leaders in Fort Wayne make good choices and grow strong.</p>
+            <h1>Strategic Legal Counsel for Business Leaders</h1>
+            <p>Empowering Fort Wayne businesses to navigate complex decisions, mitigate risk, and achieve sustainable growth.</p>
             <div class="hero-btns">
-                <a href="#contact" class="btn btn-primary">Schedule a Meeting</a>
-                <a href="#services" class="btn btn-outline">How We Help</a>
+                <a href="#contact" class="btn btn-primary">Connect With Us</a>
+                <a href="#services" class="btn btn-outline">Explore Expertise</a>
             </div>
         </div>
     </section>
 
     <section class="features" id="services">
         <div class="section-title fade-up">
-            <h2>Our Services</h2>
-            <p>Clear legal guidance for business leaders and growing companies.</p>
+            <h2>Core Practice Areas</h2>
+            <p>High-level legal advisory services designed for corporate executives, boards of directors, and growing organizations.</p>
         </div>
         <div class="grid-3">
             <div class="card fade-up delay-100">
                 <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
                 <h3>Corporate Governance</h3>
-                <p>Helping boards and leaders make good decisions, work well with owners, and plan for the future.</p>
+                <p>Strategic advising for boards and leadership teams to ensure sound decision-making, shareholder alignment, and long-term organizational health.</p>
             </div>
             <div class="card fade-up delay-200">
                 <div class="card-icon"><i class="fa-solid fa-handshake"></i></div>
                 <h3>Strategic Transactions</h3>
-                <p>Expert help for contracts, buying or selling parts of a business, and growing your company.</p>
+                <p>Expert guidance through contract negotiations, mergers, acquisitions, and restructuring to secure and scale your business operations.</p>
             </div>
             <div class="card fade-up delay-300">
                 <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
                 <h3>Risk & Compliance</h3>
-                <p>Keeping your business safe, following the law, and solving hard legal problems.</p>
+                <p>Comprehensive proactive strategies to safeguard your enterprise, maintain regulatory compliance, and resolve complex legal challenges.</p>
             </div>
         </div>
     </section>
@@ -705,11 +706,11 @@
             <div class="about-text fade-up">
                 <h2>Mark Dely</h2>
                 <h4>Founder & Lead Executive Counsel</h4>
-                <p>Sycamore Executive Counsel offers top-level legal advice to business leaders and growing companies. Founded by experienced lawyer Mark Dely, our firm brings real-world business knowledge straight to your team.</p>
-                <p>Based in Fort Wayne, Indiana, Mark blends sharp business sense with expert legal skills. He is a trusted guide for leaders and boards. Today, he works as an Executive Consultant at Parkview Health. He also serves on the Board of Trustees at Indiana Tech, and the Board of Directors for both Love Fort Wayne and Fort4Fitness.</p>
+                <p>Sycamore Executive Counsel delivers top-tier legal and business advisory services directly to your executive suite. Founded by veteran attorney Mark Dely, our firm bridges the gap between sophisticated legal strategy and practical business execution.</p>
+                <p>Based in Fort Wayne, Indiana, Mark combines sharp commercial acumen with extensive legal expertise. Serving as a trusted advisor to leaders and boards, his current roles include working as an Executive Consultant at Parkview Health, serving on the Board of Trustees at Indiana Tech, and holding Board of Directors positions for Love Fort Wayne and Fort4Fitness.</p>
                 
                 <div class="about-highlights fade-up delay-100">
-                    <h5>Career Highlights</h5>
+                    <h5>Executive Career Highlights</h5>
                     <ul>
                         <li><strong>Vera Bradley:</strong> Former Chief Administrative & Legal Officer</li>
                         <li><strong>Fred’s, Inc.:</strong> Former Senior Vice President & Chief Legal Officer</li>
@@ -719,7 +720,6 @@
             </div>
 
             <div class="about-card-column fade-up delay-200">
-                <!-- Middle Main Logo Section -->
                 <div class="about-image-container">
                     <img src="sycamore_main_logo.png" alt="Sycamore Executive Counsel Main Logo" />
                 </div>
@@ -730,14 +730,14 @@
                         <i class="fa-solid fa-graduation-cap"></i>
                         <div>
                             <strong>New York University School of Law</strong>
-                            <p style="font-size:0.85rem; color:var(--text-gray);">Juris Doctor (J.D.)</p>
+                            <p style="font-size:0.9rem; color:var(--text-gray);">Juris Doctor (J.D.)</p>
                         </div>
                     </div>
                     <div class="edu-item">
                         <i class="fa-solid fa-university"></i>
                         <div>
                             <strong>Michigan State University</strong>
-                            <p style="font-size:0.85rem; color:var(--text-gray);">Undergraduate Studies</p>
+                            <p style="font-size:0.9rem; color:var(--text-gray);">Undergraduate Studies</p>
                         </div>
                     </div>
                 </div>
@@ -746,64 +746,26 @@
     </section>
 
     <section class="contact" id="contact">
-        <div class="contact-grid fade-up">
-            <div class="contact-info">
-                <h3>Get In Touch</h3>
-                <p class="lead">Ready to get better legal help for your business? Contact us today for a private talk.</p>
-                
-                <div class="info-item">
-                    <div class="info-item-icon"><i class="fa-solid fa-location-dot"></i></div>
-                    <div>
-                        <strong style="color: var(--forest-green); display: block; margin-bottom: 5px;">Location</strong>
-                        <p style="color: var(--text-gray);">Fort Wayne, Indiana</p>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-item-icon"><i class="fa-solid fa-envelope"></i></div>
-                    <div>
-                        <strong style="color: var(--forest-green); display: block; margin-bottom: 5px;">Email</strong>
-                        <p style="color: var(--text-gray);">contact@sycamorecounsel.com</p>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-item-icon"><i class="fa-solid fa-phone"></i></div>
-                    <div>
-                        <strong style="color: var(--forest-green); display: block; margin-bottom: 5px;">Direct Line</strong>
-                        <p style="color: var(--text-gray);">(260) 555-0199</p>
-                    </div>
+        <div class="section-title fade-up">
+            <h2>Get In Touch</h2>
+            <p>Ready to secure strategic legal counsel for your organization? Contact us today to arrange a private consultation.</p>
+        </div>
+        
+        <div class="contact-card-centered fade-up delay-100">
+            <div class="info-item">
+                <div class="info-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="info-item-text">
+                    <strong>Headquarters</strong>
+                    <p>Fort Wayne, Indiana</p>
                 </div>
             </div>
 
-            <div class="contact-form">
-                <div id="formSuccess" class="success-message" role="alert" aria-live="polite">
-                    <i class="fa-solid fa-circle-check"></i> Thank you for your message. Mark Dely will be in touch shortly.
+            <div class="info-item">
+                <div class="info-item-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="info-item-text">
+                    <strong>Direct Email</strong>
+                    <p><a href="mailto:contact@sycamoreexecutivecouncil.com">contact@sycamoreexecutivecouncil.com</a></p>
                 </div>
-
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="fullName">Full Name</label>
-                        <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" required aria-required="true">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="emailAddress">Email Address</label>
-                        <input type="email" id="emailAddress" name="emailAddress" placeholder="jane@example.com" required aria-required="true">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="companyName">Company / Organization (Optional)</label>
-                        <input type="text" id="companyName" name="companyName" placeholder="Your Enterprise LLC">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="messageBody">How can we assist you?</label>
-                        <textarea id="messageBody" name="messageBody" rows="4" placeholder="Tell us how we can help your business..." required aria-required="true"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                </form>
             </div>
         </div>
     </section>
@@ -813,7 +775,7 @@
             <div class="footer-logo">
                 <i class="fa-solid fa-leaf"></i> Sycamore Executive Counsel
             </div>
-            <p style="color: var(--sage-green); font-size: 1rem;">Strategic Business & Legal Advisors • Fort Wayne, IN</p>
+            <p style="color: var(--sage-green); font-size: 1.05rem;">Strategic Business & Legal Advisors • Fort Wayne, IN</p>
         </div>
         <div class="copyright">
             &copy; 2026 Sycamore Executive Counsel. All rights reserved.
@@ -869,16 +831,6 @@
             if(!element.classList.contains('hero-content')){
                 observer.observe(element);
             }
-        });
-
-        // Accessible Contact Form Handler
-        const contactForm = document.getElementById('contactForm');
-        const formSuccess = document.getElementById('formSuccess');
-
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            contactForm.style.display = 'none';
-            formSuccess.style.display = 'block';
         });
     </script>
 </body>
